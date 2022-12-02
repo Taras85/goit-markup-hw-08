@@ -4,7 +4,23 @@
     padding-right: 15px;
     padding-left: 15px;
 
-    //outline: 2px solid tomato;
-    //outline-offset: -2px; 
+    outline: 2px solid tomato;
+    outline-offset: -2px; 
+
+
+// phone screen
+@media screen and (min-width: 480px) {
+        width: 448px;
+    }
+    
+// tablet screen
+@media screen and (min-width: 768px) {
+        width: 720px;
+    }
+    
+// desctop screen
+@media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 
 }

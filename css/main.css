@@ -35,6 +35,23 @@
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 2px solid tomato;
+  outline-offset: -2px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
+    width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
+    width: 1200px;
+  }
 }
 
 html {
@@ -428,18 +445,6 @@ img {
   bottom: 13px;
   right: 13px;
   fill: var(--background-body-color-font-baner);
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .title {
