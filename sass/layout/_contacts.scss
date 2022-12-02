@@ -1,0 +1,28 @@
+.heade-contacts {
+    display: flex;
+    gap: var(--indent-nav);
+    margin-left: auto;
+
+    &__link {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: calc(16 / 14);
+        letter-spacing: 0.02em;
+        color: var(--font-color-paragraph);
+        padding-top: 32px;
+        padding-bottom: 32px;
+        gap: 10px;
+        transition: color var(--scheme-effect);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: #2196f3;
+    }
+}

@@ -1,0 +1,42 @@
+.adds {
+  font-style: normal;
+  padding-top: 20px;
+
+  &__direction {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--background-body-color-font-baner);
+
+    transition: color var(--scheme-effect);
+    &:hover,
+    &:focus {
+        color: #2196f3;
+      }
+
+  }
+
+  &__contact {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color var(--scheme-effect);
+
+    &:hover,
+    &:focus{
+        color: #2196f3;
+      }
+
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}

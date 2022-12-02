@@ -1,0 +1,18 @@
+.footer {
+  padding: 0;
+  display: flex;
+  background-color: var(--banner-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__block {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  &-social {
+    display: flex;
+    flex-direction: column;
+  }
+}
