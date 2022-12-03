@@ -1,7 +1,8 @@
 .heade-contacts {
-    display: flex;
-    gap: var(--indent-nav);
-    margin-left: auto;
+    display: none;
+    // display: flex;
+    // gap: var(--indent-nav);
+    // margin-left: auto;
 
     &__link {
         display: flex;

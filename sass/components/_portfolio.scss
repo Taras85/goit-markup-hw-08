@@ -1,5 +1,5 @@
 .portfolio {
-  @include section;
+  @extend %section;
 
   &-container {
     @extend %container;

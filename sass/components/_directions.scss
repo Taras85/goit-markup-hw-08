@@ -1,6 +1,6 @@
 .directions {
-    @include section(0, 94px);
-    // padding-top: 0px;
+    @extend %section;
+    padding-top: 0px;
     --items: 3;
 
     &__container {
