@@ -7,6 +7,11 @@
     color: var(--accent-color-btn);
     margin-right: 92px;
 
+    @media screen and (max-width: 1199px) {
+        margin-right: 0;
+
+        }
+
     @media screen and (min-width: 1200px){
         font-weight: 700;
         font-size: 26px;
@@ -15,8 +20,10 @@
 
     &__part--color-black {
         color: var(--font-secondary-logo);
+        
     }
     &__part--color-white {
         color: var(--background-body-color-font-baner);
-    }
+
+   }
 }
