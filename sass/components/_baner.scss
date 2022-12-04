@@ -10,28 +10,78 @@
 
   &__overlay {
     @extend %section;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    max-width: 1600px;
-    min-height: 600px;
+    // padding-top: 200px;
+    // padding-bottom: 200px;
+    // max-width: 1600px;
+    // min-height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/baner1.jpg');
+    // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //   url('../images/baner1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-clip: padding-box;
+
+      // @media screen and (min-width: 768px) {
+      //       padding-top: 118px;
+      //       padding-bottom: 118px;
+      //       min-height: 400px;
+      //       max-width: 360px;
+
+      //   }
+      @media screen and (max-width: 1200px) {
+          padding-top: 118px;
+          padding-bottom: 118px;
+          min-height: 400px;
+          max-width: 768px;
+        }
+      @media screen and (min-width: 1200px) {
+          padding-top: 200px;
+          padding-bottom: 200px;
+          min-height: 600px;
+          max-width: 1600px;
+        }
+
   }
 
   &__title {
     text-align: center;
-    width: 696px;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    // width: 696px;
+    // font-size: 44px;
+    // line-height: calc(60 / 44);
+    // letter-spacing: 0.06em;
+    // text-transform: uppercase;
     color: var(--background-body-color-font-baner);
     margin-bottom: 30px;
+
+
+        @media screen and (max-width: 768px) {
+          width: 360px;
+          font-size: 26px;
+          line-height: calc(42/26);
+          text-align: center;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+    
+        @media screen and (max-width: 1200px) {
+          width: 360px;
+          font-size: 26px;
+          line-height: calc(42/26);
+          text-align: center;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+        
+        @media screen and (min-width: 1200px) {
+          width: 696px;
+          font-size: 44px;
+          line-height: calc(60 / 44);
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+        }
+
+
   }
 }

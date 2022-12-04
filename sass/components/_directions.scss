@@ -1,4 +1,5 @@
 .directions {
+    display: none;
     @extend %section;
     padding-top: 0px;
     --items: 3;
