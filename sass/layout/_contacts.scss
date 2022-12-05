@@ -1,22 +1,54 @@
 .heade-contacts {
     display: none;
-    // display: flex;
-    // gap: var(--indent-nav);
-    // margin-left: auto;
+   
+
+   
+
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        gap: var(--indent-nav);
+        margin-left: auto;
+        padding: 0;
+    }
 
     &__link {
         display: flex;
         align-items: center;
         font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16 / 14);
         letter-spacing: 0.02em;
         color: var(--font-color-paragraph);
+
+        transition: color var(--scheme-effect);
+
+    @media screen and (min-width: 768px) {
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        gap: 10px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        &:not(:last-child) {
+        margin-bottom: 10px;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        line-height: calc(16 / 14);
+        font-size: 14px;
         padding-top: 32px;
         padding-bottom: 32px;
+        
         gap: 10px;
-        transition: color var(--scheme-effect);
     }
+}
 
     &__icon {
         fill: currentColor;

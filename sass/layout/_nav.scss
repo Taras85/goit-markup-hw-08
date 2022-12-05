@@ -2,6 +2,12 @@
     display: none;
     // display: flex;
     // align-items: center;
+
+    @media screen and (min-width: 768px){
+        display:flex;
+        align-items: center;
+        }
+
     
     &__item:not(:last-child) {
         margin-right: var(--indent-nav);
@@ -19,6 +25,8 @@
         padding-bottom: 32px;
 
         transition: color var(--scheme-effect);
+
+
         
         &:hover,
         &:focus {
