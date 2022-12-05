@@ -405,6 +405,8 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
