@@ -292,10 +292,14 @@ img {
   line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--accent-color-btn);
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 @media screen and (min-width: 768px) {
   .logo {
     margin-right: 87px;
+    padding-bottom: 26px;
+    padding-top: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -435,9 +439,6 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -469,7 +470,7 @@ img {
             justify-content: space-between;
   }
 }
-.footer-social {
+.footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,6 +478,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .adds {
@@ -513,6 +517,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .adds__item:not(:last-child) {
   margin-bottom: 9px;
@@ -600,6 +607,7 @@ img {
 }
 
 .footer__title {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -614,14 +622,7 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 479px) {
-  .footer-title--flex {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .footer-title--flex {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1414,8 +1415,12 @@ img {
   }
 }
 .menu-toggle:hover,
-.menu-toggle:focus {
-  background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:focus .menu-icon-close {
+  fill: var(--accent);
+}
+
+.menu-icon-close:active {
+  fill: var(--accent);
 }
 
 .menu-container {
@@ -1449,8 +1454,8 @@ img {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 15px;
+  right: 15px;
   color: var(--font-color-title-h2-h3);
 }
 

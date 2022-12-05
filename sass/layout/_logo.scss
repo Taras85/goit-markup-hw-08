@@ -5,10 +5,14 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.03em;
     color: var(--accent-color-btn);
+    padding-bottom: 16px;
+    padding-top: 16px;
     
 
     @media screen and (min-width: 768px) {
         margin-right: 87px;
+        padding-bottom: 26px;
+        padding-top: 26px;
         }
 
     @media screen and (min-width: 1200px){

@@ -45,9 +45,16 @@ margin-left: auto;
 }
 
 .menu-toggle:hover,
-.menu-toggle:focus {
-    background-color: rgba(0, 0, 0, 0.1);
+.menu-toggle:focus .menu-icon-close{
+    fill: var(--accent);
+    // background-color: rgba(0, 0, 0, 0.1);
+    
 }
+
+.menu-icon-close:active {
+    fill: var(--accent);
+}
+
 
 .menu-container {
     position: fixed;
@@ -73,8 +80,8 @@ margin-left: auto;
 
 .menu-container .menu-toggle {
     position: absolute;
-    top: 16px;
-    right: 16px;
+    top: 15px;
+    right: 15px;
     color: var(--font-color-title-h2-h3);
     // color: #3f51b5;
     

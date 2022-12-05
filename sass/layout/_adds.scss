@@ -2,6 +2,7 @@
   font-style: normal;
   padding-top: 20px;
 
+
   &__direction {
     font-size: 14px;
     line-height: calc(24 / 14);
@@ -34,6 +35,7 @@
   &__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   &__item:not(:last-child) {

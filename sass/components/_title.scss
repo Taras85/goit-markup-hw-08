@@ -12,6 +12,7 @@
 }
 
 .footer__title {
+    display: inline-block;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
@@ -25,10 +26,10 @@
 
 .footer-title--flex{
     display: flex;
-        @media screen and (max-width: 479px) {
+        @media screen and (max-width: 767px) {
         justify-content: center;
             }
-        @media screen and (min-width: 480px) {
-        justify-content: center;
-            }
+        // @media screen and (min-width: 480px) {
+        // justify-content: center;
+        //     }
 }
