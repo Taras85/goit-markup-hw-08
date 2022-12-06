@@ -73,6 +73,9 @@ body {
   background-color: var(--background-body-color-font-baner);
   color: var(--font-color-paragraph);
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 .list {
   list-style: none;
@@ -549,18 +552,7 @@ img {
           align-items: flex-end;
   gap: 12px;
 }
-@media screen and (max-width: 479px) {
-  .subscription {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .subscription {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -573,7 +565,7 @@ img {
 }
 .subscription__input {
   padding: 15px 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   color: var(--background-body-color-font-baner);
   background-color: rgba(33, 150, 243, 0);
@@ -584,6 +576,11 @@ img {
   outline: none;
   -webkit-transition: border-color var(--scheme-effect);
   transition: border-color var(--scheme-effect);
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 358px;
+  }
 }
 .subscription__input:focus {
   border-color: var(--accent-color-btn);
@@ -766,6 +763,7 @@ img {
   opacity: 1;
   -webkit-transition: opacity var(--scheme-effect), visibility var(--scheme-effect);
   transition: opacity var(--scheme-effect), visibility var(--scheme-effect);
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -780,8 +778,8 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
   background: var(--background-body-color-font-baner);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -791,6 +789,19 @@ img {
   transition: -webkit-transform var(--scheme-effect);
   transition: transform var(--scheme-effect);
   transition: transform var(--scheme-effect), -webkit-transform var(--scheme-effect);
+}
+@media screen and (min-width: 632px) {
+  .modal {
+    top: 10px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1454,11 +1465,17 @@ img {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
 }
 
 .menu-container.is-open {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
 }
 
 .menu-container .menu-toggle {

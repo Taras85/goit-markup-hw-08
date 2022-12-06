@@ -5,4 +5,5 @@
 }
 .grid-set-item{
     flex-basis: calc((100% - (var(--indent-main) * ((var(--items)) - 1))) / var(--items));
+
 }

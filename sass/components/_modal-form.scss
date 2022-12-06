@@ -9,6 +9,7 @@
   opacity: 1;
 
   transition: opacity var(--scheme-effect), visibility var(--scheme-effect);
+  overflow: scroll;
 }
 
 .backdrop.is-hidden {
@@ -22,15 +23,29 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
   padding: 40px;
   background: var(--background-body-color-font-baner);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--scheme-effect);
-}
+    
+
+
+        @media screen and (min-width: 632px){
+          top: 10px;
+          transform: translateX(-50%);
+        }
+  
+        @media screen and (min-width: 1199px) {
+            min-width: 528px;
+            min-height: 581px;
+        }
+
+} 
+
 
 .backdrop.is-hidden .modal {
   transform: skew(-40deg, 60deg) translateX(-80%) translateY(-100%);
