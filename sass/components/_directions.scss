@@ -3,6 +3,11 @@
     @extend %section;
     padding-top: 0px;
     --items: 3;
+        @media screen and (min-width: 1200px) {
+            display: contents;
+        }
+
+
 
     &__container {
         @extend %container;

@@ -36,11 +36,11 @@
     .team__foto{
         margin-right: auto;
         margin-left: auto;
+        max-width: 300px;
+       
         
-        @media screen and (max-width: 479px) {
-                width: 450px;
-                height: 460px;
-            }
+        
+
 
         @media screen and (min-width: 480px){
         width: 450px;
@@ -55,8 +55,7 @@
             width: 270px;
             height: 260px;
         }
-        // width: 270px;
-        // height: 260px;
+ 
     }
 
     &__name {
