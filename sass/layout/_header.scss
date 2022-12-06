@@ -1,9 +1,13 @@
 .header{
+    
     border-bottom: 1px solid var(--header-border-color);
 
     &__container{
         @extend %container;
+       
         display: flex;
         align-items: center;
+        justify-content: space-between;
+        align-items: baseline;
         }
     }

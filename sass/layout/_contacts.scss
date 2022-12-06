@@ -7,7 +7,7 @@
     @media screen and (min-width: 768px){
         display: flex;
         flex-direction: column;
-        margin-left: auto;
+        // margin-left: auto;
         padding-top: 21px;
         padding-bottom: 21px;
     }
@@ -16,7 +16,7 @@
         flex-direction: row;
         gap: var(--indent-nav);
         margin-left: auto;
-        padding: 0;
+        // padding: 0;
     }
 
     &__link {

@@ -7,10 +7,7 @@
     outline: 2px solid tomato;
     outline-offset: -2px; 
 
-    // phone screen
-    @media screen and (max-width: 479px) {
-        width: 479px;
-    }
+
 
     @media screen and (min-width: 480px) {
         width: 480px;

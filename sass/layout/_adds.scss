@@ -1,6 +1,12 @@
 .adds {
   font-style: normal;
-  padding-top: 20px;
+  // padding-top: 20px;
+  // padding-bottom: 60px;
+          @media screen and (max-width: 1199px) {
+              padding-top: 20px;
+              padding-bottom: 60px;
+          
+            }
 
 
   &__direction {
@@ -35,7 +41,11 @@
   &__list {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
+      @media screen and (max-width: 1199px) {
+        align-items: center;
+         
+        }
   }
 
   &__item:not(:last-child) {
