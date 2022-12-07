@@ -13,10 +13,11 @@
     }
 
     @media screen and (min-width: 1200px) {
+        padding: 0;
         flex-direction: row;
         gap: var(--indent-nav);
         margin-left: auto;
-        // padding: 0;
+       
     }
 
     &__link {

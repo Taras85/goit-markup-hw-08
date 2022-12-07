@@ -243,6 +243,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .heade-contacts {
+    padding: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -571,7 +572,8 @@ img {
 }
 .subscription__input {
   padding: 15px 16px;
-  width: 450px;
+  width: 95vw;
+  max-width: 450px;
   height: 50px;
   color: var(--background-body-color-font-baner);
   background-color: rgba(33, 150, 243, 0);
@@ -582,6 +584,11 @@ img {
   outline: none;
   -webkit-transition: border-color var(--scheme-effect);
   transition: border-color var(--scheme-effect);
+}
+@media screen and (min-width: 1200px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .subscription__input {
@@ -707,11 +714,49 @@ img {
   background-position: center;
   background-size: cover;
   background-clip: padding-box;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_s@1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_s@1x.jpg);
 }
-@media screen and (max-width: 1199px) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .baner__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_s@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_s@2x.jpg);
+  }
+}
+@media screen and (min-width: 481px) {
+  .baner__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_m@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_m@1x.jpg);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .baner__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_m@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_m@2x.jpg);
+  }
+}
+@media screen and (min-width: 769px) {
+  .baner__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_l@1x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_l@1x.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .baner__overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/_baner/img_l@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/_baner/img_l@2x.jpg);
+  }
+}
+@media screen and (max-width: 768px) {
   .baner__overlay {
     padding-top: 118px;
     padding-bottom: 118px;
+    min-height: 400px;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .baner__overlay {
     min-height: 400px;
     max-width: 768px;
   }
@@ -1138,24 +1183,20 @@ img {
 .team .team__foto {
   margin-right: auto;
   margin-left: auto;
-  max-width: 300px;
 }
 @media screen and (min-width: 480px) {
   .team .team__foto {
     width: 450px;
-    height: 460px;
   }
 }
 @media screen and (min-width: 768px) {
   .team .team__foto {
     width: 354px;
-    height: 374px;
   }
 }
 @media screen and (min-width: 1200px) {
   .team .team__foto {
     width: 270px;
-    height: 260px;
   }
 }
 .team__name {
@@ -1419,24 +1460,6 @@ img {
   background-color: var(--background-body-color-font-baner);
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-@media screen and (max-width: 767px) {
-  .gallery__item img {
-    width: 450px;
-    height: 404px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .gallery__item img {
-    width: 354px;
-    height: 294px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .gallery__item img {
-    width: 370px;
-    height: 294px;
-  }
 }
 
 .menu {

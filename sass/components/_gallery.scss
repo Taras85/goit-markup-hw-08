@@ -84,21 +84,21 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-  &__item img {
+  // &__item img {
 
-          @media screen and (max-width: 767px) {
-              width: 450px;
-              height: 404px;
-            }
-          @media screen and (min-width: 768px) {
-              width: 354px;
-              height: 294px;
-            }
-          @media screen and (min-width: 1200px) {
-              width: 370px;
-              height: 294px;
-            }
+  //         @media screen and (max-width: 767px) {
+  //             width: 450px;
+  //             height: 404px;
+  //           }
+  //         @media screen and (min-width: 768px) {
+  //             width: 354px;
+  //             height: 294px;
+  //           }
+  //         @media screen and (min-width: 1200px) {
+  //             width: 370px;
+  //             height: 294px;
+  //           }
 
-  }
+  // }
 
 }
