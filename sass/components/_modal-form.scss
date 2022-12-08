@@ -31,21 +31,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--scheme-effect);
-    
 
+  @media screen and (min-width: 632px) {
+    top: 10px;
+    transform: translateX(-50%);
+  }
 
-        @media screen and (min-width: 632px){
-          top: 10px;
-          transform: translateX(-50%);
-        }
-  
-        @media screen and (min-width: 1199px) {
-            min-width: 528px;
-            min-height: 581px;
-        }
-
-} 
-
+  @media screen and (min-width: 1199px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: skew(-40deg, 60deg) translateX(-80%) translateY(-100%);
@@ -213,9 +209,13 @@
 
 .license-title {
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
-
   color: var(--font-color-paragraph);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }

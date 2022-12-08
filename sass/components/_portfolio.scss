@@ -5,35 +5,27 @@
     @extend %container;
     display: flex;
     flex-direction: column;
-    
   }
   &-filter {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: var(--indent-main);
-    
-        
+
     @media screen and (min-width: 768px) {
-          justify-content: center;
-          }
-    @media screen and (min-width: 1200px) {
-      padding-bottom: var(--indent-nav);;
+      justify-content: center;
     }
-
-
-
+    @media screen and (min-width: 1200px) {
+      padding-bottom: var(--indent-nav);
+    }
 
     & &__item:not(:last-child) {
       margin-right: 8px;
-          @media screen and (max-width: 768px) {
-              margin-bottom: 15px;
-            }
-        }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
 
-    // & &__item:first-child &__button {
-    //   padding-left: 25px;
-    //   padding-right: 25px;
-    // }
+
 
     &__button {
       font-family: inherit;
@@ -54,8 +46,6 @@
       background-color: var(--team-background-color);
       color: var(--font-color-title-h2-h3);
       cursor: pointer;
-
-
 
       &:hover,
       &:focus {

@@ -34,8 +34,6 @@
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid tomato;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 480px) {
   .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
@@ -605,18 +603,6 @@ img {
   fill: var(--background-body-color-font-baner);
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  margin: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
 .title {
   font-size: 28px;
   line-height: 1.1666666667;
@@ -752,13 +738,13 @@ img {
     padding-top: 118px;
     padding-bottom: 118px;
     min-height: 400px;
-    max-width: 480px;
+    max-width: 640px;
   }
 }
 @media screen and (min-width: 768px) {
   .baner__overlay {
     min-height: 400px;
-    max-width: 768px;
+    max-width: 1024px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1052,10 +1038,16 @@ img {
 
 .license-title {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--font-color-paragraph);
+}
+@media screen and (min-width: 1200px) {
+  .license-title {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1256,6 +1248,11 @@ img {
 }
 .partner__item {
   height: 92px;
+}
+@media screen and (min-width: 1200px) {
+  .partner__item {
+    width: 170px;
+  }
 }
 .partner__link {
   display: -webkit-box;
@@ -1599,7 +1596,7 @@ img {
   font-size: 34px;
   line-height: 40px;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .mobile-social {
