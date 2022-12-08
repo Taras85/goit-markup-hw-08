@@ -21,35 +21,35 @@
 
     // Mobile screen
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(./images/_baner/img_s@1x.jpg);
+      url(../images/_baner/img_s@1x.jpg);
 
     // retina mobile screen
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/_baner/img_s@2x.jpg);
+        url(../images/_baner/img_s@2x.jpg);
     }
 
     // Tablet screen
     @media screen and (min-width: 481px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/_baner/img_m@1x.jpg);
+        url(../images/_baner/img_m@1x.jpg);
 
       // retina tablet screen
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(./images/_baner/img_m@2x.jpg);
+          url(../images/_baner/img_m@2x.jpg);
       }
     }
 
     // Desktop screen
     @media screen and (min-width: 769px) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(./images/_baner/img_l@1x.jpg);
+        url(../images/_baner/img_l@1x.jpg);
 
       // retina desktop screen
       @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-          url(./images/_baner/img_l@2x.jpg);
+          url(../images/_baner/img_l@2x.jpg);
       }
     }
 
