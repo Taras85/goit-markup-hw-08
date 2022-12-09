@@ -20,10 +20,7 @@
 
 .modal {
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 450px;
   min-height: 609px;
   padding: 40px;
   background: var(--background-body-color-font-baner);
@@ -32,8 +29,16 @@
   border-radius: 4px;
   transition: transform var(--scheme-effect);
 
-  @media screen and (min-width: 632px) {
-    top: 10px;
+  @media screen and (max-width: 479px) {
+    width: 94%;
+    top: 12%;
+    transform: translateX(-50%);
+  }
+
+  @media screen and (min-width: 480px) {
+    min-width: 450px;
+    min-height: 609px;
+    top: 12%;
     transform: translateX(-50%);
   }
 

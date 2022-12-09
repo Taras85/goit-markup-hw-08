@@ -2,7 +2,7 @@
   font-style: normal;
 
   @media screen and (max-width: 1199px) {
-    padding-top: 20px;
+    padding-top: 28px;
     padding-bottom: 60px;
   }
 
@@ -40,9 +40,13 @@
     @media screen and (max-width: 1199px) {
       align-items: center;
     }
+
+    // &:not(:last-child) {
+    //   margin-bottom: 12px;
+    // }
   }
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 12px;
   }
 }
