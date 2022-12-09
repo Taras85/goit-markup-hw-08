@@ -34,6 +34,8 @@
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
+  outline: 2px solid tomato;
+  outline-offset: -2px;
 }
 @media screen and (min-width: 480px) {
   .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
@@ -605,15 +607,17 @@ img {
 
 .title {
   font-size: 28px;
-  line-height: 1.1666666667;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--font-color-title-h2-h3);
-  margin-bottom: var(--indent-nav);
+  margin-bottom: var(--indent-main);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: var(--indent-nav);
   }
 }
 
@@ -1104,13 +1108,12 @@ img {
 }
 
 .directions {
-  display: none;
   padding-top: 0px;
   --items: 3;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .directions {
-    display: contents;
+    display: none;
   }
 }
 .directions__item {

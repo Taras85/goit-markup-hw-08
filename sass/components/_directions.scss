@@ -1,10 +1,10 @@
 .directions {
-  display: none;
   @extend %section;
   padding-top: 0px;
   --items: 3;
-  @media screen and (min-width: 1200px) {
-    display: contents;
+  @media screen and (max-width: 1199px) {
+    // display: contents;
+    display: none;
   }
 
   &__container {
