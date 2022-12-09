@@ -34,8 +34,6 @@
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid tomato;
-  outline-offset: -2px;
 }
 @media screen and (min-width: 480px) {
   .portfolio-container, .partner__block, .team__container, .directions__container, .priorities__container, .baner__container, .footer__block, .header__container {
