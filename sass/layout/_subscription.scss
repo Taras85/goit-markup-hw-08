@@ -1,11 +1,13 @@
 .subscription {
   display: flex;
   align-items: flex-end;
-  gap: 12px;
 
   @media screen and (max-width: 1199px) {
     flex-direction: column;
     align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 12px;
   }
 
   &__input {
@@ -22,7 +24,7 @@
     outline: none;
     transition: border-color var(--scheme-effect);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       width: 450px;
     }
     @media screen and (min-width: 1200px) {
