@@ -26,10 +26,10 @@
 
     transition: color var(--scheme-effect);
 
-    // &:hover,
-    // &:focus {
-    //   color: #2196f3;
-    // }
+    &:hover,
+    &:focus {
+      color: #2196f3;
+    }
 
     &--current {
       // animation: shake-top 15s var(--scheme-effect) infinite both;
