@@ -32,11 +32,8 @@
     }
 
     &--current {
-      // animation: shake-top 15s var(--scheme-effect) infinite both;
-      // color: var(--accent-color-btn);
-      &:hover {
-        animation: spin 2s linear 0s infinite;
-      }
+      animation: shake-top 15s var(--scheme-effect) infinite both;
+      color: var(--accent-color-btn);
     }
     &--current::after {
       position: absolute;
