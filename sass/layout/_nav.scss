@@ -26,14 +26,17 @@
 
     transition: color var(--scheme-effect);
 
-    &:hover,
-    &:focus {
-      color: #2196f3;
-    }
+    // &:hover,
+    // &:focus {
+    //   color: #2196f3;
+    // }
 
     &--current {
-      animation: shake-top 15s var(--scheme-effect) infinite both;
-      color: var(--accent-color-btn);
+      // animation: shake-top 15s var(--scheme-effect) infinite both;
+      // color: var(--accent-color-btn);
+      &:hover {
+        animation: spin 2s linear 0s infinite;
+      }
     }
     &--current::after {
       position: absolute;
@@ -45,5 +48,13 @@
       bottom: -1px;
       background-color: var(--accent-color-btn);
     }
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

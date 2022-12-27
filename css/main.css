@@ -353,13 +353,9 @@ img {
   -webkit-transition: color var(--scheme-effect);
   transition: color var(--scheme-effect);
 }
-.nav__link:hover, .nav__link:focus {
-  color: #2196f3;
-}
-.nav__link--current {
-  -webkit-animation: shake-top 15s var(--scheme-effect) infinite both;
-          animation: shake-top 15s var(--scheme-effect) infinite both;
-  color: var(--accent-color-btn);
+.nav__link--current:hover {
+  -webkit-animation: spin 2s linear 0s infinite;
+          animation: spin 2s linear 0s infinite;
 }
 .nav__link--current::after {
   position: absolute;
@@ -372,6 +368,27 @@ img {
   background-color: var(--accent-color-btn);
 }
 
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
